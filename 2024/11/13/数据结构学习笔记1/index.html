@@ -19,22 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"easternyouzi.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="东方西柚的个人博客">
-<meta property="og:url" content="https://easternyouzi.github.io/index.html">
+    <meta name="description" content="绪论基本数据结构1、线性结构：线性表；栈、队列，双队列；数组，串 2、非线性结构：树、二叉树；图，网 两类主要算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构学习笔记1">
+<meta property="og:url" content="https://easternyouzi.github.io/2024/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/index.html">
 <meta property="og:site_name" content="东方西柚的个人博客">
+<meta property="og:description" content="绪论基本数据结构1、线性结构：线性表；栈、队列，双队列；数组，串 2、非线性结构：树、二叉树；图，网 两类主要算法">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-13T11:45:02.000Z">
+<meta property="article:modified_time" content="2024-11-14T00:20:28.822Z">
 <meta property="article:author" content="柚子">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://easternyouzi.github.io/">
+<link rel="canonical" href="https://easternyouzi.github.io/2024/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://easternyouzi.github.io/2024/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/","path":"2024/11/13/数据结构学习笔记1/","title":"数据结构学习笔记1"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>东方西柚的个人博客</title>
+<title>数据结构学习笔记1 | 东方西柚的个人博客</title>
   
 
 
@@ -67,7 +73,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">东方西柚的个人博客</h1>
+      <p class="site-title">东方西柚的个人博客</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -93,7 +99,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -106,6 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%AA%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">1.0.1.</span> <span class="nav-text">基本数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A4%E7%B1%BB%E4%B8%BB%E8%A6%81%E7%AE%97%E6%B3%95"><span class="nav-number">1.0.2.</span> <span class="nav-text">两类主要算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.0.3.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="nav-number">1.0.4.</span> <span class="nav-text">数据的存储结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.0.5.</span> <span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.0.6.</span> <span class="nav-text">抽象数据类型</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -152,16 +159,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://easternyouzi.github.io/2024/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -175,13 +183,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 东方西柚的个人博客">
+      <meta itemprop="name" content="数据结构学习笔记1 | 东方西柚的个人博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/" class="post-title-link" itemprop="url">数据结构学习笔记1</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          数据结构学习笔记1
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -219,19 +227,27 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h3 id="基本数据结构"><a href="#基本数据结构" class="headerlink" title="基本数据结构"></a>基本数据结构</h3><p>1、线性结构：线性表；栈、队列，双队列；数组，串</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h3 id="基本数据结构"><a href="#基本数据结构" class="headerlink" title="基本数据结构"></a>基本数据结构</h3><p>1、线性结构：线性表；栈、队列，双队列；数组，串</p>
 <p>2、非线性结构：树、二叉树；图，网</p>
-<h3 id="两类主要算法"><a href="#两类主要算法" class="headerlink" title="两类主要算法"></a>两类主要算法</h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<h3 id="两类主要算法"><a href="#两类主要算法" class="headerlink" title="两类主要算法"></a>两类主要算法</h3><p>1、查找算法：顺序、折半、分块、哈希、二叉排序树</p>
+<p>2、排序算法：直接插入、堆排序、2-路归并，快速排序</p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>数据结构：相互之间存在一种或多种特定关系的<em>数据元素</em>的集合</p>
+<p>数据：能输入到计算机中并被计算机程序加工处理的符号的总称</p>
+<p>数据元素：数据的基本单位（元素、记录、结点、顶点）</p>
+<p>数据项：数据的不可分割的最小单位</p>
+<p>数据对象：由性质相同（类型相同）的数据元素组成的集合</p>
+<h3 id="数据的存储结构"><a href="#数据的存储结构" class="headerlink" title="数据的存储结构"></a>数据的存储结构</h3><p>1.顺序存储结构（向量、一维数组）</p>
+<p>2.非顺序存储结构（链接表）</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>一个值的集合和定义在这个值上的一组操作的总称</p>
+<p>原子类型：如int 、char 、float</p>
+<p>结构类型：如线性表、数组、树等</p>
+<h3 id="抽象数据类型"><a href="#抽象数据类型" class="headerlink" title="抽象数据类型"></a>抽象数据类型</h3><p>一个抽象数据类型可以用一个三元组来表示 <em>（D、S、P）</em></p>
+<p>D:数据对象</p>
+<p>S：D中数据元素的关系集</p>
+<p>P:对D中数据元素的基本操作</p>
+<p>形式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ADT 抽象数据类型名</span><br><span class="line">&#123;</span><br><span class="line">    1.数据类型</span><br><span class="line">    2.数据关系</span><br><span class="line">    3.一组基本操作/运算</span><br><span class="line">&#125;ADT 抽象数据类型名</span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -239,91 +255,26 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://easternyouzi.github.io/2024/11/12/%E6%B5%8B%E8%AF%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="柚子">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="东方西柚的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 东方西柚的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/11/12/%E6%B5%8B%E8%AF%95/" class="post-title-link" itemprop="url">测试</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-11-12 19:10:59 / 修改时间：19:29:47" itemprop="dateCreated datePublished" datetime="2024-11-12T19:10:59+08:00">2024-11-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>第一次自己搭建博客</p>
-<p>这篇文章为测试文章</p>
-<h1 id="测试测试"><a href="#测试测试" class="headerlink" title="测试测试"></a>测试测试</h1><p>123123</p>
-<p>123<strong>123</strong></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/12/%E6%B5%8B%E8%AF%95/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/12/%E6%B5%8B%E8%AF%95/" rel="prev" title="测试">
+                  <i class="fa fa-angle-left"></i> 测试
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
